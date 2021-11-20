@@ -1,31 +1,55 @@
 local name = "go-mail"
-local version = "1.0.0"
+local version = "1.0.1"
 
 food = {
     name = name,
-    description = ""Minimal mail implementation in go"",
-    license = ""MIT"",
-    homepage = ""https://stenic.io"",
+    description = "Minimal mail implementation in go",
+    license = "MIT",
+    homepage = "https://stenic.io",
     version = version,
     packages = {
         {
-            os = "darwin",
+            os = "windows",
             arch = "amd64",
-            url = "https://github.com/stenic/go-mail/releases/download/1.0.0/go-mail_darwin_amd64.tar.gz",
-            sha256 = "a0b0ec94aea55769b286792c0c2b517d6b1006cb9c65e785be1606eb61948850",
+            url = "https://github.com/stenic/go-mail/releases/download/1.0.1/go-mail_windows_amd64.zip",
+            sha256 = "f87fa18da9a1e1706ab4b62544eba3a4ead2bed7d4f017985ae34ea8c5860437",
             resources = {
                 {
-                    path = "go-mail",
-                    installpath = "bin/go-mail",
-                    executable = true
+                    path = "go-mail.exe",
+                    installpath = "bin\\go-mail.exe",
+                },
+            }
+        },
+        {
+            os = "windows",
+            arch = "arm64",
+            url = "https://github.com/stenic/go-mail/releases/download/1.0.1/go-mail_windows_arm64.zip",
+            sha256 = "15a5fb08af8876c2f3123d94c529ee8ec6bf5380abcfb09a04828c634eb58fbd",
+            resources = {
+                {
+                    path = "go-mail.exe",
+                    installpath = "bin\\go-mail.exe",
                 },
             }
         },
         {
             os = "linux",
             arch = "arm",
-            url = "https://github.com/stenic/go-mail/releases/download/1.0.0/go-mail_linux_armv6.tar.gz",
-            sha256 = "d37e9087b473aca087ceab4774af3762ea211dbb5b3b5b92015ef89422cfd3d2",
+            url = "https://github.com/stenic/go-mail/releases/download/1.0.1/go-mail_linux_armv6.tar.gz",
+            sha256 = "50a05a8b507971dcfbad22a8154c5748bc7f445f11769907e13d0a7b88f254a5",
+            resources = {
+                {
+                    path = "go-mail",
+                    installpath = "bin/go-mail",
+                    executable = true
+                },
+            }
+        },
+        {
+            os = "linux",
+            arch = "amd64",
+            url = "https://github.com/stenic/go-mail/releases/download/1.0.1/go-mail_linux_amd64.tar.gz",
+            sha256 = "54c752a95ece805f0c73e47b4dc673feeb9b4630290e185a6c927c851c58c557",
             resources = {
                 {
                     path = "go-mail",
@@ -37,8 +61,8 @@ food = {
         {
             os = "windows",
             arch = "arm",
-            url = "https://github.com/stenic/go-mail/releases/download/1.0.0/go-mail_windows_armv6.zip",
-            sha256 = "ece381a7b494fe0801ae103e772369e337cbbf022d551c0e58d83d7712e46c39",
+            url = "https://github.com/stenic/go-mail/releases/download/1.0.1/go-mail_windows_armv6.zip",
+            sha256 = "a5bf99f1d09bcf402f4fd9acf510d864535f138924701bda35922902acf06d60",
             resources = {
                 {
                     path = "go-mail.exe",
@@ -49,8 +73,8 @@ food = {
         {
             os = "linux",
             arch = "arm64",
-            url = "https://github.com/stenic/go-mail/releases/download/1.0.0/go-mail_linux_arm64.tar.gz",
-            sha256 = "0ba353a3bca9b43d58f892011dd67a873d9ee0a332ea80a4f548376de695f885",
+            url = "https://github.com/stenic/go-mail/releases/download/1.0.1/go-mail_linux_arm64.tar.gz",
+            sha256 = "ed27925857659c97f24fb41ef307ab7f1592c7f029a5c9a97c7661067534088b",
             resources = {
                 {
                     path = "go-mail",
@@ -60,47 +84,23 @@ food = {
             }
         },
         {
-            os = "linux",
+            os = "darwin",
             arch = "amd64",
-            url = "https://github.com/stenic/go-mail/releases/download/1.0.0/go-mail_linux_amd64.tar.gz",
-            sha256 = "abe7533cfb9a04d6dc8e38914b17206462175b8a8d7c8d64e59c87140b315935",
+            url = "https://github.com/stenic/go-mail/releases/download/1.0.1/go-mail_darwin_amd64.tar.gz",
+            sha256 = "818f6abb20307e65514487a6298f386861773452c9d81a211ac5a6db42529bda",
             resources = {
                 {
                     path = "go-mail",
                     installpath = "bin/go-mail",
                     executable = true
-                },
-            }
-        },
-        {
-            os = "windows",
-            arch = "amd64",
-            url = "https://github.com/stenic/go-mail/releases/download/1.0.0/go-mail_windows_amd64.zip",
-            sha256 = "4cc8bc410f06a4e54efbccb226f956d2a7b1f6a8e8cd2824a16f3e9e8dcff503",
-            resources = {
-                {
-                    path = "go-mail.exe",
-                    installpath = "bin\\go-mail.exe",
-                },
-            }
-        },
-        {
-            os = "windows",
-            arch = "arm64",
-            url = "https://github.com/stenic/go-mail/releases/download/1.0.0/go-mail_windows_arm64.zip",
-            sha256 = "870772651e5fe5e2c5a99622329193607370f0916e8b64f0e0ca0e6a2740f28e",
-            resources = {
-                {
-                    path = "go-mail.exe",
-                    installpath = "bin\\go-mail.exe",
                 },
             }
         },
         {
             os = "darwin",
             arch = "arm64",
-            url = "https://github.com/stenic/go-mail/releases/download/1.0.0/go-mail_darwin_arm64.tar.gz",
-            sha256 = "4343d4cca65d2db31b44eef31fc36382db910d05028d99a34e4d51a30f4b4603",
+            url = "https://github.com/stenic/go-mail/releases/download/1.0.1/go-mail_darwin_arm64.tar.gz",
+            sha256 = "1820fe1b104a092d33eb2d5ad7c34bc2c6ef8ccdaafe777c31c959dd20111013",
             resources = {
                 {
                     path = "go-mail",
