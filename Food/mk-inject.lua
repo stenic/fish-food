@@ -1,18 +1,18 @@
 local name = "mk-inject"
-local version = "1.0.1"
+local version = "1.0.2"
 
 food = {
     name = name,
-    description = ""Inject output of any command into markdown files"",
-    license = ""MIT"",
-    homepage = ""https://stenic.io"",
+    description = "Inject output of any command into markdown files",
+    license = "MIT",
+    homepage = "https://stenic.io",
     version = version,
     packages = {
         {
             os = "linux",
-            arch = "arm64",
-            url = "https://github.com/stenic/mk-inject/releases/download/1.0.1/mk-inject_linux_arm64.tar.gz",
-            sha256 = "40a9b1a8775b5efa2dae107f494aa8bc7860259313f9dda8f39dc753e2b186e5",
+            arch = "arm",
+            url = "https://github.com/stenic/mk-inject/releases/download/1.0.2/mk-inject_linux_armv6.tar.gz",
+            sha256 = "7ad8dfd47734e035123b134fe0f23cbb97292b4ce3286fbcd447ef66bfe74c12",
             resources = {
                 {
                     path = "mk-inject",
@@ -22,23 +22,10 @@ food = {
             }
         },
         {
-            os = "darwin",
+            os = "linux",
             arch = "amd64",
-            url = "https://github.com/stenic/mk-inject/releases/download/1.0.1/mk-inject_darwin_amd64.tar.gz",
-            sha256 = "acde65dac489498a2aee9ab9b5a00465fbc54f07550fbc3a28b88f7a38fe8e7c",
-            resources = {
-                {
-                    path = "mk-inject",
-                    installpath = "bin/mk-inject",
-                    executable = true
-                },
-            }
-        },
-        {
-            os = "darwin",
-            arch = "arm64",
-            url = "https://github.com/stenic/mk-inject/releases/download/1.0.1/mk-inject_darwin_arm64.tar.gz",
-            sha256 = "2cdcdd41783c4d68d1b16a569d3fbafaffb33bb1b034e105670c517d88b56d9f",
+            url = "https://github.com/stenic/mk-inject/releases/download/1.0.2/mk-inject_linux_amd64.tar.gz",
+            sha256 = "1a8b1d8d58e3739654c2f0f266011c032b46027e86cdcdf81c3eb175121a4b6c",
             resources = {
                 {
                     path = "mk-inject",
@@ -50,8 +37,8 @@ food = {
         {
             os = "windows",
             arch = "amd64",
-            url = "https://github.com/stenic/mk-inject/releases/download/1.0.1/mk-inject_windows_amd64.zip",
-            sha256 = "4cfdd1aafbbfc3ba358f05331b293dbd0c7e114c103d1ad1bfdce03dab517e7c",
+            url = "https://github.com/stenic/mk-inject/releases/download/1.0.2/mk-inject_windows_amd64.zip",
+            sha256 = "775288deaef5267b99f5797919d5ceca007aa702112969f9b4967c50a80a3435",
             resources = {
                 {
                     path = "mk-inject.exe",
@@ -62,8 +49,8 @@ food = {
         {
             os = "windows",
             arch = "arm",
-            url = "https://github.com/stenic/mk-inject/releases/download/1.0.1/mk-inject_windows_armv6.zip",
-            sha256 = "a6db863d592a57320a290e699befa1b51c458da1303601c014c865407dc73c2d",
+            url = "https://github.com/stenic/mk-inject/releases/download/1.0.2/mk-inject_windows_armv6.zip",
+            sha256 = "274ab1a3999195bcd7bcdd1a4b98599f187da9395d5972740149edaf540ccef7",
             resources = {
                 {
                     path = "mk-inject.exe",
@@ -72,10 +59,22 @@ food = {
             }
         },
         {
-            os = "linux",
-            arch = "arm",
-            url = "https://github.com/stenic/mk-inject/releases/download/1.0.1/mk-inject_linux_armv6.tar.gz",
-            sha256 = "8655bdda211990995b05b0a486b02ba5516be5965f53baa1cdab56de6ee0c205",
+            os = "windows",
+            arch = "arm64",
+            url = "https://github.com/stenic/mk-inject/releases/download/1.0.2/mk-inject_windows_arm64.zip",
+            sha256 = "38c4add2d665bde8765c7b0a8d26469c1dc5de97cb7d9d853eb207ebaf406d70",
+            resources = {
+                {
+                    path = "mk-inject.exe",
+                    installpath = "bin\\mk-inject.exe",
+                },
+            }
+        },
+        {
+            os = "darwin",
+            arch = "amd64",
+            url = "https://github.com/stenic/mk-inject/releases/download/1.0.2/mk-inject_darwin_amd64.tar.gz",
+            sha256 = "f3290723f487254da16190bf8b09f0526e523ebe59eae72e47a872d87a81b55e",
             resources = {
                 {
                     path = "mk-inject",
@@ -85,22 +84,23 @@ food = {
             }
         },
         {
-            os = "windows",
+            os = "darwin",
             arch = "arm64",
-            url = "https://github.com/stenic/mk-inject/releases/download/1.0.1/mk-inject_windows_arm64.zip",
-            sha256 = "7cdab6cc5fa82f0126d03424aa57d0de663cff2f8b2d9e37d4c97850546c019f",
+            url = "https://github.com/stenic/mk-inject/releases/download/1.0.2/mk-inject_darwin_arm64.tar.gz",
+            sha256 = "576c97e8dff4844be57b63e9a2b5a8e98854517b5f60e96f8ba9e0ff597c2c1e",
             resources = {
                 {
-                    path = "mk-inject.exe",
-                    installpath = "bin\\mk-inject.exe",
+                    path = "mk-inject",
+                    installpath = "bin/mk-inject",
+                    executable = true
                 },
             }
         },
         {
             os = "linux",
-            arch = "amd64",
-            url = "https://github.com/stenic/mk-inject/releases/download/1.0.1/mk-inject_linux_amd64.tar.gz",
-            sha256 = "5a3318ab3ba6f8f974a121e0687c4f574694864cafbc74e1dda30fe8eb0ea67b",
+            arch = "arm64",
+            url = "https://github.com/stenic/mk-inject/releases/download/1.0.2/mk-inject_linux_arm64.tar.gz",
+            sha256 = "5b9053ffba0b6e14966d24dc4e65f35426e64100aed20e3b39c8242e1d0e1811",
             resources = {
                 {
                     path = "mk-inject",
