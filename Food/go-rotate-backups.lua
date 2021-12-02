@@ -1,5 +1,5 @@
 local name = "go-rotate-backups"
-local version = "1.1.0"
+local version = "1.1.1"
 
 food = {
     name = name,
@@ -9,48 +9,10 @@ food = {
     version = version,
     packages = {
         {
-            os = "darwin",
-            arch = "arm64",
-            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.0/go-rotate-backups_darwin_arm64.tar.gz",
-            sha256 = "fa5e16e9668d83e4fedb09adb5e6fad74f1fd1a449d5e6241d34270eff1e7bcb",
-            resources = {
-                {
-                    path = "go-rotate-backups",
-                    installpath = "bin/go-rotate-backups",
-                    executable = true
-                },
-            }
-        },
-        {
-            os = "linux",
-            arch = "arm64",
-            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.0/go-rotate-backups_linux_arm64.tar.gz",
-            sha256 = "0d677293bc8617e386f253b70d5dab89236bbcca52056b9e20aae69b1073a164",
-            resources = {
-                {
-                    path = "go-rotate-backups",
-                    installpath = "bin/go-rotate-backups",
-                    executable = true
-                },
-            }
-        },
-        {
-            os = "windows",
-            arch = "arm",
-            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.0/go-rotate-backups_windows_armv6.zip",
-            sha256 = "de84c9f32f9312c17e85fd18a9519d10781123b788d372ca4b5278eaef7e892d",
-            resources = {
-                {
-                    path = "go-rotate-backups.exe",
-                    installpath = "bin\\go-rotate-backups.exe",
-                },
-            }
-        },
-        {
             os = "windows",
             arch = "amd64",
-            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.0/go-rotate-backups_windows_amd64.zip",
-            sha256 = "8162715a4158e8909ea69c1f69d83ae7095a7ca2c21ec5f4603758812a2bb835",
+            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.1/go-rotate-backups_windows_amd64.zip",
+            sha256 = "27bebdf29e97a741416a487f1ba38f88eaca1d297ffb140a36e3fd9f0f624abc",
             resources = {
                 {
                     path = "go-rotate-backups.exe",
@@ -59,10 +21,22 @@ food = {
             }
         },
         {
-            os = "linux",
+            os = "windows",
             arch = "arm",
-            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.0/go-rotate-backups_linux_armv6.tar.gz",
-            sha256 = "6027ed6ab4e53ee1d046787d28bd05bc3691e42930d8f7d66ad37944d016170c",
+            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.1/go-rotate-backups_windows_armv6.zip",
+            sha256 = "2c98955acaa94e2e9f08c2686822dce1b6a06f5c6b5f9e717f9fa9aed67bc569",
+            resources = {
+                {
+                    path = "go-rotate-backups.exe",
+                    installpath = "bin\\go-rotate-backups.exe",
+                },
+            }
+        },
+        {
+            os = "darwin",
+            arch = "arm64",
+            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.1/go-rotate-backups_darwin_arm64.tar.gz",
+            sha256 = "f4c262b2b9a40e2f63709e899d2284ebe62f59217af04c482ea1045757174f62",
             resources = {
                 {
                     path = "go-rotate-backups",
@@ -74,8 +48,8 @@ food = {
         {
             os = "darwin",
             arch = "amd64",
-            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.0/go-rotate-backups_darwin_amd64.tar.gz",
-            sha256 = "632537a6a2143dc2364dd2a4701e303fad0dbf7934b611ce221a0274ad88989d",
+            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.1/go-rotate-backups_darwin_amd64.tar.gz",
+            sha256 = "164394dc13c607c2cd77f52c57fac358add68796956e281980a9983b2e8c9c9f",
             resources = {
                 {
                     path = "go-rotate-backups",
@@ -87,8 +61,8 @@ food = {
         {
             os = "windows",
             arch = "arm64",
-            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.0/go-rotate-backups_windows_arm64.zip",
-            sha256 = "527ac8bd1f3d8b7723e41ad9c32fa5f4cf9013e169d7d4c99511a4ef0e7ceb43",
+            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.1/go-rotate-backups_windows_arm64.zip",
+            sha256 = "e7cf58fe40e94a735f741e5d489eedee38d5bb206caf486cd5e721a13300ae2e",
             resources = {
                 {
                     path = "go-rotate-backups.exe",
@@ -98,9 +72,35 @@ food = {
         },
         {
             os = "linux",
+            arch = "arm",
+            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.1/go-rotate-backups_linux_armv6.tar.gz",
+            sha256 = "6a91f7d2d37d85e28008bba289ff2ab552b20aab816dda86e738dcf6d7f772be",
+            resources = {
+                {
+                    path = "go-rotate-backups",
+                    installpath = "bin/go-rotate-backups",
+                    executable = true
+                },
+            }
+        },
+        {
+            os = "linux",
             arch = "amd64",
-            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.0/go-rotate-backups_linux_amd64.tar.gz",
-            sha256 = "e288c29be22e258d26e62d68aa7b62ddbcf1fa636e5518a333bdc788d4544e52",
+            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.1/go-rotate-backups_linux_amd64.tar.gz",
+            sha256 = "9a2b59b2f80840257b35d7b3205e2038b676d2f851858aaa145c194218836c91",
+            resources = {
+                {
+                    path = "go-rotate-backups",
+                    installpath = "bin/go-rotate-backups",
+                    executable = true
+                },
+            }
+        },
+        {
+            os = "linux",
+            arch = "arm64",
+            url = "https://github.com/stenic/go-rotate-backups/releases/download/1.1.1/go-rotate-backups_linux_arm64.tar.gz",
+            sha256 = "d365da4c7e176ae94cf1365b898f9b49fd3c7a60abb23fe7bb81ad9fb119e199",
             resources = {
                 {
                     path = "go-rotate-backups",
